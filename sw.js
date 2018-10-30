@@ -5,6 +5,7 @@ var urlsToCache = [
   '/images/bg1.jpeg',
   '/images/bg2.jpeg',
   '/images/bg2.jpg',
+  '/images/icon.png',
   '/week2/index.html',
   '/week2/add2numbers.js',
   '/week3/index.html',
