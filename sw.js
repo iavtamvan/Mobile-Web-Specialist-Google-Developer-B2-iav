@@ -1,6 +1,6 @@
 var CACHE_NAME = 'my-site-cache-v5';
 var urlsToCache = [
-  // sesuaikan dengan project masing-masing
+  // disini kita mendaftarkan file-file yang akan kita cache
   '/',
   '/images/bg1.jpeg',
   '/images/bg2.jpeg',
@@ -20,11 +20,12 @@ var urlsToCache = [
   '/week4/index.html'
 ];
 
-//install service worker
+// install service worker
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
     caches.open(CACHE_NAME).then(function(cache) {
+      // ketika service worker selesai di install maka akan mendapat pesan ini di console
         console.log('in install serviceWorker.... cache opened');
         return cache.addAll(urlsToCache);
       })
@@ -60,3 +61,6 @@ self.addEventListener('activate', function(event) {
     })
   );
 });
+
+// untuk memahami lifecycle pada service worker bisa buka link di bawah ini 
+// https://developers.google.com/web/fundamentals/primers/service-workers/?hl=id
