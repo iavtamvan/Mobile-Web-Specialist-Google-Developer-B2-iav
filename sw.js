@@ -1,4 +1,4 @@
-var CACHE_NAME = 'my-site-cache-v4';
+var CACHE_NAME = 'my-site-cache-v5';
 var urlsToCache = [
   // sesuaikan dengan project masing-masing
   '/',
@@ -16,7 +16,7 @@ var urlsToCache = [
   '/week4/images/steak.jpg',
   '/week4/images/warkop.jpg',
   '/week4/js/peta.js',
-  '/week4/'
+  '/week4/index.html'
 ];
 
 //install service worker
