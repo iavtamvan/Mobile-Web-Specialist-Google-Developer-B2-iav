@@ -1,0 +1,18 @@
+{
+  "short_name": "MWS Iav",
+  "name": "Mobile Web Specialist - Iav",
+  "icons": [
+    {
+      "src": "images/icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone"
+}
